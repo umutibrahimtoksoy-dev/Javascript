@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            box-shadow: 0px 5px 5px 0px;
+            text-align: center;
+        }
+    </style>
+
+   
+</head>
+<body>
+    <div class="style">Deneme</div>
+    <div id="bir"></div>
+    <script>
+        //create element
+         const li = document.createElement("li");
+         console.log(li);
+ 
+         // add class
+         li.className="style";
+ 
+         // attribute
+         li.setAttribute("title","new item");
+ 
+         // text node
+         const text = document.createTextNode('new item');
+         li.appendChild(text);
+        
+ 
+         //ekrana yazdırma
+         document.querySelector("#bir").appendChild(li);
+         
+      
+
+ </script>
+</body>
+</html>

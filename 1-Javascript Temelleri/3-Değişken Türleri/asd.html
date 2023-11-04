@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language="javascript">
+
+function dizi()
+{
+var a = new Array();
+for(k=0;k<=4;k++)
+a[k]=parseInt(prompt("öğrenci ortolama gir","....."));
+
+for(i=0;i<4;i++)
+for(j=i+1;j<=4;j++)
+if(a[i]>a [j])
+    {
+      bos=a[i];
+	  a[i]=a[j]
+	  a[j]=bos;
+    }
+for(k=0;k<=4;k++)
+document.write(a[k]+"<br>");
+}
+</script></head>
+<body>
+<form> <input type="button" value="Sayıları gir" onclick="dizi()"></form>
+</body></html>

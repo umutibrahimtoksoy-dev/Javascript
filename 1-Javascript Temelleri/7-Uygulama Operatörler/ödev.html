@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        let canIndex;
+        let adaIndex;
+
+        const canKilo = 60;
+        const canBoy = 1.75;
+
+        const adaKilo = 59;
+        const adaBoy = 1.55;
+
+        canIndex = canKilo / (canBoy*canBoy);
+        adaIndex = adaKilo / (adaBoy*adaBoy);
+
+        console.log('Adanın indeksi :',adaIndex.toFixed());
+        console.log('Canın indeksi :',canIndex.toFixed());
+
+        if(0<=adaIndex && adaIndex<=18.4){console.log('Ada Zayıf');}
+        else if(18.5<=adaIndex && adaIndex<=24.97){console.log('Ada Normal Kiloda');}
+        else if(25<=adaIndex && adaIndex<=29.9){console.log('Ada Fazla Kilolu :');}
+        else if(30<=adaIndex){console.log('Ada Şişman(Obez)');}
+        else {console.log('Hata !');}
+
+       var a =  new Array(20,50,60);
+            console.log(a);
+    </script>
+</head>
+<body>
+ 
+</body>
+</html>
